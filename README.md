@@ -33,7 +33,7 @@ To get started with the client-side of this project, follow these steps:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/portfolio-client.git
+    git clone https://github.com/Z3nakv/PORTFOLIO.git
     cd portfolio-client
     ```
 
@@ -61,7 +61,7 @@ To get started with the client-side of this project, follow these steps:
     npm start
     ```
 
-    The app will be available at [http://localhost:3000].
+    The app will be available at [http://localhost:5173].
 
 ## Usage
 
