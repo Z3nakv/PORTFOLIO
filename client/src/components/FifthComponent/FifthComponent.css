@@ -1,0 +1,45 @@
+.fifth-container {
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--black-color);
+    background-color: #1E3A5F;
+
+    & h2 {
+      font-size: 4rem;
+    }
+    
+    & .projects-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding: .5rem;
+
+      & svg {
+        font-size: 8rem;
+        cursor: pointer;
+        transition: transform .2s;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      & div:nth-child(2) svg {
+        font-size: 6rem;
+        margin: 1rem auto;
+      }
+  
+      & p {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  @media (min-width: 768px) { 
+    & .fifth-container {grid-column: span 3;}
+  }

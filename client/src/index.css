@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  --white-color: white;
+  --black-color: black;
+}
+
+[data-theme = 'dark'] {
+  --white-color: black;
+  --black-color: #ffffff;
+}
+
+html {
+font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  width: 100%;
+  color: var(--black-color);
+  background: url('./assets/71d8bb73135b2b07af0b575d43a67fe3-ezgif.com-optimize.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: "Space Mono", monospace;
+  user-select: none;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: auto;
+}
+
+.grid-container {
+  height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 1rem;
+  padding: 1rem;
+
+  & > div {
+    border-radius: 1rem;
+    font-size: 4rem;
+  }
+}
+  
+
+@media (min-width: 768px) { 
+    .grid-container {
+      margin: auto;
+      max-width: 1000px;
+    }
+  }

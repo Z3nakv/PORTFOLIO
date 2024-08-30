@@ -1,0 +1,10 @@
+.seventh-container {
+    grid-column: span 3; 
+    background: url('../../assets/joker-optimize.gif');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+@media (min-width: 768px) { 
+    .seventh-container {grid-column: span 3;}
+}

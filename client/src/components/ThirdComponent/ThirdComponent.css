@@ -1,0 +1,50 @@
+.third-container {
+    background-color: #1E2F97;
+    grid-column: span 2; 
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    overflow:hidden;
+
+    & .github-icon {
+      font-size: 6rem;
+      position: absolute;
+      cursor: pointer;
+      transition: transform .2s;
+      color: var(--black-color);
+      right: 1rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    & .linkedin-icon {
+      font-size: 6rem;
+      position: absolute;
+      cursor: pointer;
+      transition: transform .2s;
+      color: var(--black-color);
+      left: 1rem;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  @media (min-width: 768px) { 
+      .third-container{
+        grid-column: span 2;
+
+        & .github-icon {
+        right: 5rem;
+      }
+
+        & .linkedin-icon {
+        left: 5rem;
+      }
+    }
+  }
