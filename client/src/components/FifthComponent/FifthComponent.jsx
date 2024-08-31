@@ -12,7 +12,7 @@ const FifthComponent = () => {
           <p>Food Delivery</p>
         </div>
         <div>
-          <IoChatbubbleEllipses />
+          <IoChatbubbleEllipses onClick={()=>window.open('https://chat-app-2edbe.web.app')} />
           <p>Chat App</p>
         </div>
       </div>
