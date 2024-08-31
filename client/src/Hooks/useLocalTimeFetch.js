@@ -4,7 +4,7 @@ const useLocalTimeFetch = () => {
     const [time, setTime] = useState();
 
     const requestTime = async () => {
-        const response = await fetch('http://worldtimeapi.org/api/timezone/America/Lima')
+        const response = await fetch('https://worldtimeapi.org/api/timezone/America/Lima')
         const result = await response.json();
         const currentTime = new Date(result.datetime);
         startClock(currentTime)

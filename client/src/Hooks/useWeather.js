@@ -8,7 +8,7 @@ const useWeather = () => {
 
     const requestWeather = async () => {
         try {
-            const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=Lima,PE&appid=${API_KEY}`);
+            const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=Lima,PE&appid=${API_KEY}`);
             const result = await response.json();
             
             const { lat } = result[0];
