@@ -14,7 +14,7 @@ const useFetchNews = () => {
         console.log(error);
       }
     }
-    console.log(news);
+    // console.log(news);
     
     useEffect(() => {
       requestNews()
