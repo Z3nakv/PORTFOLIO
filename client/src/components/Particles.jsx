@@ -26,13 +26,14 @@ const ParticlesComponent = (props) => {
   }, []);
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    // console.log(container);
   };
 
   const options = useMemo(
     () => ({
+      
         fullScreen: {
-            enable:false
+            // enable:false
         },
       background: {
         color: {

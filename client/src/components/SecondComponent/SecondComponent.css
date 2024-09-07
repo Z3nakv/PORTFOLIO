@@ -2,11 +2,11 @@
     /* padding: 2rem 1rem; */
     background: linear-gradient(135deg, #00feba, #5b548a);
     grid-column: span 3; 
+    grid-row: 3/4;
     color: var(--black-color);
     display: grid;
-    place-content: center;
-    grid-template-columns: 1fr 1fr;
-    
+    place-items: center;
+    grid-template-columns: 1fr 1fr;  
 
     & div {
       display: flex;
@@ -17,21 +17,22 @@
 
       & h3 {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
 
       & p {
-        font-size: 4rem;
+        font-size: 2rem;
         font-weight: bold;
         margin-left: 2rem;
       }
 
       & span {
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
     }
 
     & img {
+      height: 6rem;
       animation: flying 2s ease-in-out infinite;
     }
   }
@@ -50,11 +51,53 @@
     }
   }
 
+  @media (min-width: 480px) { 
+      .second-container{
+        grid-row: 2/3;
+
+        & div {
+          & h3 {
+            font-size: 1.5rem;
+          }
+
+          & p {
+            font-size: 3rem;
+          }
+
+          & span {
+            font-size: 1.5rem;
+          }
+        }
+
+        & img {
+          height: 8rem;
+        }
+      }
+
+  }
+
   @media (min-width: 768px) { 
     .second-container {
-      grid-column: span 2; 
-      padding: 3rem;
+      grid-column: 5/span 2; 
+      padding: 2rem;
+      grid-row: 3;
 
+      & div {
+        & h3 {
+          font-size: 2rem;
+        }
+  
+        & p {
+          font-size: 4rem;
+        }
+  
+        & span {
+          font-size: 2rem;
+        }
+  
+      }
+
+      
       & img {
         top: 2rem;
         right: 2rem;

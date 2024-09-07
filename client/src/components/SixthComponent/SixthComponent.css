@@ -31,5 +31,7 @@
   }
 
   @media (min-width: 768px) { 
-    .sixth-container {grid-column: span 3;}
+    .sixth-container {
+      grid-column: span 4;
+    }
   }

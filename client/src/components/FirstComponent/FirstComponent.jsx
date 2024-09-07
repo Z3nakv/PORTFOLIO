@@ -7,11 +7,11 @@ const FirstComponent = () => {
         <div className='img-container'>
             <img src={profile} alt="" />
         </div>
-        <div className='info-container'>
+        {/* <div className='info-container'> */}
             <h1>Adrian Rivarola</h1>
             <p>FullStack Software Developer on Javascript</p>
           <hr />
-        </div>
+        {/* </div> */}
     </div>
   )
 }

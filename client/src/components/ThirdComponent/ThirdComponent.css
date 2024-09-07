@@ -1,50 +1,72 @@
 .third-container {
     background-color: #1E2F97;
-    grid-column: span 2; 
+    grid-column: span 6; 
     position: relative;
-    display: flex;
+    /* display: flex;
     justify-content:center;
-    align-items: center;
+    align-items: center; */
     width: 100%;
     overflow:hidden;
+    padding: 1rem;
 
-    & .github-icon {
-      font-size: 6rem;
-      position: absolute;
-      cursor: pointer;
-      transition: transform .2s;
-      color: var(--black-color);
-      right: 1rem;
+    & .icons_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      gap: 5rem;
 
-      &:hover {
-        transform: scale(1.1);
+      & .github-icon {
+        font-size: 6rem;
+        /* position: absolute; */
+        cursor: pointer;
+        transition: transform .2s;
+        color: var(--black-color);
+        /* right: 1rem; */
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      & .linkedin-icon {
+        font-size: 6rem;
+        /* position: absolute; */
+        cursor: pointer;
+        transition: transform .2s;
+        color: var(--black-color);
+        /* left: 1rem; */
+  
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 
-    & .linkedin-icon {
-      font-size: 6rem;
-      position: absolute;
-      cursor: pointer;
-      transition: transform .2s;
-      color: var(--black-color);
-      left: 1rem;
-
-      &:hover {
-        transform: scale(1.1);
-      }
+    & .particles {
+      /* position: absolute; */
+      /* top: 0; */
+      /* left: 0; */
     }
   }
 
-  @media (min-width: 768px) { 
+  @media (min-width: 480px) { 
       .third-container{
         grid-column: span 2;
 
-        & .github-icon {
-        right: 5rem;
-      }
+        & .icons_container{
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
 
-        & .linkedin-icon {
-        left: 5rem;
-      }
+            & .github-icon {
+            right: 5rem;
+          }
+    
+            & .linkedin-icon {
+            left: 5rem;
+          }
+        }
+        
     }
   }

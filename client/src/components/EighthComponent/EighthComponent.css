@@ -5,6 +5,7 @@
     justify-content: space-around;
     align-items: center;
     transition: transform .2s;
+    padding: .5rem;
 
     & > * {
       font-size: 4rem;
@@ -19,10 +20,12 @@
 
   @media (min-width: 768px) { 
     .eighth-container {
-      grid-column: span 2;
+      grid-column: span 3;
       padding: 2rem;
-      flex-wrap: wrap;
-      
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      place-items: center;
+      gap: 1rem;
       background-repeat: no-repeat;
       background-size: cover;
 

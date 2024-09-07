@@ -41,5 +41,5 @@
   }
 
   @media (min-width: 768px) { 
-    & .fifth-container {grid-column: span 3;}
+    & .fifth-container {grid-column: span 4;}
   }
