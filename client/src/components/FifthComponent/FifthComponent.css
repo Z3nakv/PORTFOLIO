@@ -8,7 +8,7 @@
     background-color: #1E3A5F;
 
     & h2 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
     
     & .projects-container {
@@ -16,7 +16,7 @@
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      padding: .5rem;
+      padding: 1rem;
 
       & svg {
         font-size: 8rem;
@@ -27,10 +27,16 @@
           transform: scale(1.1);
         }
       }
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
   
       & div:nth-child(2) svg {
-        font-size: 6rem;
-        margin: 1rem auto;
+        /* font-size: 6rem; */
+        /* margin: 1rem auto; */
       }
   
       & p {
