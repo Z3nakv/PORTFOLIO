@@ -2,7 +2,16 @@
 
 :root {
   --white-color: white;
-  --black-color: black;
+  --black-color: rgb(140, 134, 134);
+  --container-1: rgb(27, 26, 85);
+  --container-2: rgb(27, 26, 85);
+  --container-3: rgb(27, 26, 85);
+  --container-4: rgb(27, 26, 85);
+  --container-5: rgb(7, 15, 43);
+  --container-6: rgb(27, 26, 85);
+  --container-7: rgb(27, 26, 85);
+  --container-8: rgb(27, 26, 85);
+  --container-9: rgb(83, 92, 145);
 }
 
 [data-theme = 'dark'] {
@@ -35,6 +44,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--black-color);
 }
 
 li {

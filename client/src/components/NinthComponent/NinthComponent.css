@@ -1,8 +1,9 @@
 .ninth-container {
     grid-column: span 6; 
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
+    background-color: var(--container-9);
     text-align: start;
-    padding: 1rem 1rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

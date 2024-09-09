@@ -5,7 +5,8 @@
     justify-content: space-around;
     align-items: center;
     color: var(--black-color);
-    background-color: #1E3A5F;
+    /* background-color: #1E3A5F; */
+    background-color: var(--container-5);
 
     & h2 {
       font-size: 3rem;

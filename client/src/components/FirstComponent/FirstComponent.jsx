@@ -8,9 +8,9 @@ const FirstComponent = () => {
             <img src={profile} alt="" />
         </div>
         {/* <div className='info-container'> */}
-            <h1>Adrian Rivarola</h1>
-            <p>FullStack Software Developer on Javascript</p>
-          <hr />
+        <h1>Adrian Rivarola</h1>
+        <p>FullStack Software Developer on Javascript</p>
+        {/* <hr /> */}
         {/* </div> */}
     </div>
   )

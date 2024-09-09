@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
-    color: #F5F5F5;
+    color: var(--black-color);
 
 
       & > div { 

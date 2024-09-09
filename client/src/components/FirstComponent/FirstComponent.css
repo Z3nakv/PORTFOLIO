@@ -1,7 +1,8 @@
 .first-container {
     grid-column: span 6; 
     text-align: center;
-    background-color: #4A0A0A;
+    /* background-color: #4A0A0A; */
+    background-color: var(--container-1);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 1.5rem;
@@ -32,12 +33,11 @@
         place-self: center;
       }
 
-      & hr {
-        width: 100%;
+      /* & hr {
         height: 2px;
         background-color: rgb(216, 73, 73);
         border: none;
-      }
+      } */
     /* } */
 
     & .img-container {
