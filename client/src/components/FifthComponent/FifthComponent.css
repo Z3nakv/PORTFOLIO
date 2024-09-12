@@ -8,6 +8,7 @@
     /* background-color: #1E3A5F; */
     background-color: var(--container-5);
     /* animation: fadein 3s; */
+    padding: 1rem;
 
     & h2 {
       font-size: 3rem;
@@ -19,6 +20,7 @@
       align-items: center;
       width: 100%;
       padding: 1rem;
+      padding-top: 0;
 
       & svg {
         font-size: 8rem;
@@ -36,11 +38,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-      }
-  
-      & div:nth-child(2) svg {
-        /* font-size: 6rem; */
-        /* margin: 1rem auto; */
+        flex: 1;
       }
   
       & p {
