@@ -13,6 +13,7 @@
       0 0 10px #ebc9c8, 
       0 0 15px #ebc9c8, 
       0 0 20px #ebc9c8;
+    /* animation: fadein 1.5s; */
 
     /* & .info-container {
       display: flex;
@@ -67,6 +68,32 @@
 
       & p {
         font-size: 2rem;
+        grid-column: 2/5;
+      }
+
+      & .img-container {
+        grid-column: 1/2;
+        place-self: center;
       }
     }
   }
+
+  @media (min-width: 768px) { 
+    .first-container {
+
+      & h1 {
+        grid-column: 2/5;
+      }
+
+      & p {
+        grid-column: 2/5;
+      }
+
+      & .img-container {
+        grid-column: 1/2;
+        grid-row: span 2;
+      }
+    }
+  }
+
+  

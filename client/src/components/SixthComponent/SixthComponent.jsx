@@ -1,12 +1,22 @@
 import "./SixthComponent.css";
 import useFetchNews from '../../Hooks/useFetchNews.js';
+import Loader from "../../loader/Loader";
+import { motion } from 'framer-motion'
 
 const SixthComponent = () => {
     const { news } = useFetchNews();
   return (
-    <div className="sixth-container">
-     
-        {news && (
+    <motion.div 
+    className="sixth-container"
+    initial={{ opacity:0, y:20 }}
+    animate={{ opacity:1, y:0 }}
+    transition={{ duration:2, delay:1 }}
+    >
+        {
+        !news
+        ? <Loader />
+        :
+        (
           <>
             <h2>{news.title}</h2>
             <a href={news.source.url} target="_blank">
@@ -16,7 +26,7 @@ const SixthComponent = () => {
           </>
         )}
       
-    </div>
+    </motion.div>
   );
 };
 

@@ -2,10 +2,16 @@ import "./FifthComponent.css";
 import { TbTruckDelivery } from "react-icons/tb";
 import { IoChatbubbleEllipses } from "react-icons/io5";
 import { MdDashboard } from "react-icons/md";
+import { motion } from 'framer-motion'
 
 const FifthComponent = () => {
   return (
-    <div className="fifth-container">
+    <motion.div 
+    className="fifth-container"
+    initial={{ opacity:0, y:20 }}
+    animate={{ opacity:1, y:0 }}
+    transition={{ duration:1.8, delay:.8 }}
+    >
       <h2 className="fifth-container-title">Projects</h2>
       <div className="projects-container">
         <div>
@@ -18,10 +24,10 @@ const FifthComponent = () => {
         </div>
         <div>
           <MdDashboard onClick={()=>window.open('https://admin-dashboard-4txj.onrender.com/')} />
-          <p>Chat App</p>
+          <p>Dashboard</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -5,10 +5,16 @@ import { IoLogoCss3 } from "react-icons/io";
 import { FaHtml5 } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
+import { motion } from 'framer-motion'
 
 const EighthComponent = () => {
   return (
-    <div className="eighth-container">
+    <motion.div 
+    className="eighth-container"
+    initial={{ opacity:0, y:20 }}
+    animate={{ opacity:1, y:0 }}
+    transition={{ duration:2.4, delay:1.4 }}
+    >
       <FaReact
         onClick={() => window.open("https://react.dev/learn", "_blank")}
       />
@@ -49,7 +55,7 @@ const EighthComponent = () => {
           )
         }
       />
-    </div>
+    </motion.div>
   );
 };
 

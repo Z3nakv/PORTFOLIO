@@ -8,6 +8,7 @@
     width: 100%;
     overflow:hidden;
     padding: 1rem;
+    /* animation: fadein 2s; */
 
     & .icons_container {
       display: flex;
@@ -20,7 +21,6 @@
         font-size: 6rem;
         /* position: absolute; */
         cursor: pointer;
-        transition: transform .2s;
         color: var(--black-color);
         /* right: 1rem; */
   
@@ -33,7 +33,6 @@
         font-size: 6rem;
         /* position: absolute; */
         cursor: pointer;
-        transition: transform .2s;
         color: var(--black-color);
         /* left: 1rem; */
   

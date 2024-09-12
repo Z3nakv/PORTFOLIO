@@ -6,6 +6,7 @@
     align-items: center;
     transition: transform .2s;
     padding: .5rem;
+    /* animation: fadein 4.5s; */
 
     & > * {
       font-size: 4rem;

@@ -4,7 +4,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     color: var(--black-color);
-
+    /* animation: fadein 2.5s; */
 
       & > div { 
         display: flex;

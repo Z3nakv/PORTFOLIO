@@ -7,6 +7,8 @@
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;  
+    padding: 1rem;
+    /* animation: fadein 2s; */
 
     & div {
       display: flex;
