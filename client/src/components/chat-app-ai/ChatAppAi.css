@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.main-chat-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chat-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.container {
+    border: 1px solid black;
+    height: 40rem;
+    max-height: 500px;
+    width: 80vw;
+    max-width: 300px;
+    border-radius: 2rem;
+    background-color: rgb(45, 44, 154);
+    font-size: 1.2rem;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    
+
+    form {
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+
+        & input {
+            width: 60%;
+            border-radius: .5rem;
+            border: none;
+            outline: none;
+            padding-inline: .5rem;
+        }
+
+        & button {
+            background-color: rgb(38, 50, 80);
+            border: none;
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            & > * {
+                font-size: 1rem;
+                color: white;
+            }
+        }
+    }
+}
+
+.chat-board {
+    height: 80%;
+    margin: 1rem;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-content:space-between;
+    overflow: auto;
+    border-radius: 2rem; 
+    background-color: rgb(60, 58, 161);
+
+    &::-webkit-scrollbar{
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent; /* Color de fondo de la pista de la barra */
+        border-radius: 10px; /* Bordes redondeados */
+        margin: 1.5rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #717274; /* Color del "pulgar" (el área movible) */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #2563eb;
+    }
+}
+
+.message{
+    background-color: rgb(50, 50, 50);
+    border-radius: 1rem 1rem 1rem 0;
+    width: max-content;
+    max-width: 80%;
+    padding: .5rem;
+    margin-bottom: 1rem;
+
+    & p {
+        margin: 0 .5rem;
+    }
+
+    &.user {
+        align-self: flex-end;
+        background-color: rgb(59, 130, 246);
+        border-radius: 1rem 1rem 0 1rem;
+        color: white;
+    }
+}
+
+.bot-img {
+    height: 2rem;
+}
+
+.chat-bot {
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    
+    & .chat-bot-icon {
+        color: white;
+        font-size: 3rem;
+        position: absolute;
+        top: -1rem;
+        left: -1rem;
+    }
+
+    .bot {
+        height: 9rem;
+        animation: 3s ease-in-out infinite alternate ani-bot ;
+        pointer-events: none;
+    }
+}
+
+@keyframes ani-bot {
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    100%{
+        transform: scale(1.1) rotate(-5deg)
+    }
+}
+
+

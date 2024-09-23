@@ -2,6 +2,7 @@ import "./SixthComponent.css";
 import useFetchNews from '../../Hooks/useFetchNews.js';
 import Loader from "../../loader/Loader";
 import { motion } from 'framer-motion'
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const SixthComponent = () => {
     const { news } = useFetchNews();
@@ -12,6 +13,12 @@ const SixthComponent = () => {
     animate={{ opacity:1, y:0 }}
     transition={{ duration:2, delay:1 }}
     >
+      <motion.div
+      className="sub_container"
+      whileHover={{ scale: 1.2, duration: 0.5 }}
+      onClick={() => window.open(`${news.source.url}`, "blank")}
+      >
+        <FaExternalLinkAlt className="link-icon" />
         {
         !news
         ? <Loader />
@@ -19,13 +26,10 @@ const SixthComponent = () => {
         (
           <>
             <h2>{news.title}</h2>
-            <a href={news.source.url} target="_blank">
-              {news.source.url}
-            </a>
             <img src={news.image} alt="" />
           </>
         )}
-      
+      </motion.div>
     </motion.div>
   );
 };

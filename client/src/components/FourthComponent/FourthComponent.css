@@ -4,7 +4,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
     color: var(--black-color);
-    /* animation: fadein 2.5s; */
+    aspect-ratio: 1/1;
 
       & > div { 
         display: flex;
@@ -18,7 +18,6 @@
       }
 
       & .fourth-child-1 {
-        /* background: url('./assets/180265933458eaf59bb397a74ce18945.gif'); */
         & p {
           font-size: 2rem;
         }

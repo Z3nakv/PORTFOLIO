@@ -1,28 +1,46 @@
 .seventh-container {
     grid-column: span 3; 
-    background: url('../../assets/joker-optimize.gif');
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
     color: var(--black-color);
-    /* animation: fadein 4s; */
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1/1;
 
-    & h4 {
-        font-size: 3rem;
-    }
+    .sub_container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+        background: url('../../assets/joker-optimize.gif');
+        background-color: rgba(70, 75, 203, 0.5);
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        background-blend-mode: overlay;
 
-    & svg {
-        font-size: 10rem;
-    }
-
-    & a {
-        text-decoration: none;
+        & .link-icon {
+            height: 2rem;
+            position: absolute;
+            top:1rem;
+            right: 1rem;
+            color: var(--black-color);
+        }
+    
+        & h4 {
+            font-size: 3rem;
+        }
+    
+        & .mail-icon {
+            font-size: 10rem;
+        }
+    
+        & a {
+            text-decoration: none;
+        }
     }
 }
 
 @media (min-width: 768px) { 
-    .seventh-container {grid-column: span 3;}
+    .seventh-container {
+        grid-column: 5 / span 2;
+    }
 }

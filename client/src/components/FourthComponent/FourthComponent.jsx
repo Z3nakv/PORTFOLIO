@@ -4,6 +4,7 @@ import { MdLightMode } from "react-icons/md";
 import useLocalTimeFetch from "../../Hooks/useLocalTimeFetch";
 import Loader from "../../loader/Loader";
 import { motion } from 'framer-motion'
+import LightDarkModeComponent from "../../lightDarkMode/LightDarkMode";
 
 
 const FourthComponent = ({handleToggle,theme}) => {
@@ -30,11 +31,7 @@ const FourthComponent = ({handleToggle,theme}) => {
         
       </div>
       <div className="fourth-child-2">
-        {theme === "dark" ? (
-          <MdLightMode onClick={handleToggle} />
-        ) : (
-          <MdOutlineDarkMode onClick={handleToggle} />
-        )}
+        <LightDarkModeComponent handleToggle={handleToggle} theme={theme} />
       </div>
     </motion.div>
   );

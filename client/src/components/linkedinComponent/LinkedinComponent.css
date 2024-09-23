@@ -1,0 +1,35 @@
+.main_container {
+    grid-column: span 3;
+    background-color: rgb(10, 102, 194);
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+
+    & .sub_container{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-content: center;
+        color: var(--black-color);
+
+        & .link-icon {
+            height: 2rem;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+
+        & .linkedin-icon {
+            font-size: 7rem;
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .main_container {
+        grid-column: 3 / span 2;
+        grid-row: 4;
+    }
+}

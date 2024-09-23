@@ -1,6 +1,5 @@
 .ninth-container {
     grid-column: span 6; 
-    /* background-color: yellowgreen; */
     background-color: var(--container-9);
     text-align: start;
     padding: 2rem;
@@ -9,7 +8,7 @@
     justify-content: center;
     gap: .5rem;
     color: var(--black-color);
-    /* animation: fadein 5s; */
+    aspect-ratio: 1/0.5;
 
     & h2 {
       font-size: 3rem;
@@ -20,9 +19,24 @@
     }
 }
 
+@media (min-width: 480px) { 
+    .ninth-container {
+      grid-row: 7;
+
+      & h2{
+        font-size: 5rem;
+      }
+
+      & p {
+        font-size: 1.6rem;
+      }
+    }
+}
+
 @media (min-width: 768px) { 
   .ninth-container {
-    grid-column: span 6;
+    grid-column: 1 / span 4;
+    grid-row: 5/6;
     padding: 2rem 2rem;
 
     & h2 {
@@ -30,7 +44,7 @@
     }
 
     & p {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
   }
 }

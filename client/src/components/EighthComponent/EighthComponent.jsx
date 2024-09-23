@@ -16,14 +16,17 @@ const EighthComponent = () => {
     transition={{ duration:2.4, delay:1.4 }}
     >
       <FaReact
+      className="react-icon"
         onClick={() => window.open("https://react.dev/learn", "_blank")}
       />
       <RiTailwindCssFill
+      className="react-icon"
         onClick={() =>
           window.open("https://tailwindcss.com/docs/utility-first", "_blank")
         }
       />
       <IoLogoJavascript
+      className="react-icon"
         onClick={() =>
           window.open(
             "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -32,6 +35,7 @@ const EighthComponent = () => {
         }
       />
       <FaNodeJs
+      className="react-icon"
         onClick={() =>
           window.open(
             "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
@@ -40,6 +44,7 @@ const EighthComponent = () => {
         }
       />
       <IoLogoCss3
+      className="react-icon"
         onClick={() =>
           window.open(
             "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps",
@@ -48,6 +53,7 @@ const EighthComponent = () => {
         }
       />
       <FaHtml5
+      className="react-icon"
         onClick={() =>
           window.open(
             "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML",

@@ -2,13 +2,13 @@
     grid-column: span 6;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
     color: var(--black-color);
-    /* background-color: #1E3A5F; */
-    background-color: var(--container-5);
-    /* animation: fadein 3s; */
-    padding: 1rem;
+    background-color: rgb(69, 69, 159);
+    padding: 2rem;
+    aspect-ratio: 1/0.5;
 
     & h2 {
       font-size: 3rem;
@@ -48,6 +48,27 @@
     }
   }
 
-  @media (min-width: 768px) { 
-    & .fifth-container {grid-column: span 4;}
+  @media (min-width: 480px) { 
+      .fifth-container{
+        & h2 {
+          font-size: 4.5rem;
+        }
+      }
   }
+
+  @media (min-width: 768px) { 
+    .fifth-container {
+      grid-column: span 4;
+
+      & h2 {
+        font-size: 5rem;
+      }
+
+      & .projects-container {
+  
+        & svg {
+          font-size: 10rem;
+        }
+    }
+  }
+}

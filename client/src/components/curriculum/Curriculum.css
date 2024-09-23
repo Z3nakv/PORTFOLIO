@@ -1,0 +1,32 @@
+.main_cv_container {
+    grid-column: span 3;
+    cursor: pointer;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    color: var(--black-color);
+    background-color: rgb(58, 58, 210);
+
+    & .sub_container {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        place-content: center;
+
+        & .link-cv {
+            font-size: 10rem;
+        }
+    
+        & .link-icon {
+            height: 2rem;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .main_cv_container {
+        grid-column: 5 / span 2;
+    }
+}

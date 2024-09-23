@@ -8,14 +8,20 @@ import SixthComponent from './components/SixthComponent/SixthComponent.jsx';
 import SeventhComponent from './components/SeventhComponent/SeventhComponent.jsx';
 import EighthComponent from './components/EighthComponent/EighthComponent.jsx';
 import NinthComponent from './components/NinthComponent/NinthComponent.jsx';
+import LinkedinComponent from './components/linkedinComponent/LinkedinComponent.jsx';
+import Curriculum from './components/curriculum/Curriculum.jsx';
+import ChatAppAi from './components/chat-app-ai/ChatAppAi.jsx';
+import { useRef } from 'react';
 
 const App = () => {
 
   const {theme, handleToggleTheme} = useLightDarkMode();
+  const containerRef = useRef(null);
   
   return (
-    <div data-theme={theme}>
-      <div className='grid-container'>
+    <>
+    <div className='main-container' data-theme={theme}>
+      <div className='grid-container' ref={containerRef} >
 
         <FirstComponent />
 
@@ -31,12 +37,18 @@ const App = () => {
         
         <SeventhComponent />
 
+        <LinkedinComponent />
+
         <EighthComponent />
+
+        <Curriculum />
 
         <NinthComponent />
 
       </div>
+      <ChatAppAi reference={containerRef} />
     </div>
+    </>
   )
 }
 

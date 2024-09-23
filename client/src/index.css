@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
   --white-color: white;
   --black-color: rgb(140, 134, 134);
-  --container-1: rgb(27, 26, 85);
+  --container-1: rgb(32, 28, 86);
   --container-2: rgb(27, 26, 85);
   --container-3: rgb(27, 26, 85);
   --container-4: rgb(27, 26, 85);
@@ -30,16 +30,17 @@ font-size: 62.5%;
 }
 
 body {
-  /* height: 100dvh; */
   width: 100%;
   color: var(--black-color);
-  background: url('./assets/71d8bb73135b2b07af0b575d43a67fe3-ezgif.com-optimize.gif');
+  background: linear-gradient(to right, rgb(1, 0, 10), rgb(12, 10, 54), rgb(21, 21, 76));
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  
-  font-family: "Space Mono", monospace;
+  font-family: "Poppins", sans-serif;
   user-select: none;
+}
 
+.main-container {
+  position: relative;
 }
 
 a {
@@ -58,16 +59,18 @@ img {
 .grid-container {
   height: 100%;
   display: grid;
+  place-content: center;
   grid-template-columns: repeat(6,1fr);
   gap: 1rem;
   padding: 1rem;
+  margin: auto;
+  position: relative;
 
   & > div {
-    border-radius: 1rem;
+    border-radius: 3rem;
     font-size: 4rem;
     backdrop-filter: blur(12px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    /* border: 1px solid rgba(133, 131, 13, .2); */
     transition: color .8s;
 
     & svg {
@@ -75,12 +78,17 @@ img {
     }
   }
 }
+
+@media (min-width: 480px) { 
+    .grid-container{
+      max-width: 600px;
+    }
+}
   
 
 @media (min-width: 768px) { 
     .grid-container {
-      margin: auto;
-      max-width: 1000px;
+      max-width: 950px;
     }
   }
 
