@@ -16,12 +16,11 @@ import { useRef } from 'react';
 const App = () => {
 
   const {theme, handleToggleTheme} = useLightDarkMode();
-  const containerRef = useRef(null);
   
   return (
     <>
     <div className='main-container' data-theme={theme}>
-      <div className='grid-container' ref={containerRef} >
+      <div className='grid-container'>
 
         <FirstComponent />
 
@@ -46,7 +45,7 @@ const App = () => {
         <NinthComponent />
 
       </div>
-      <ChatAppAi reference={containerRef} />
+      <ChatAppAi />
     </div>
     </>
   )

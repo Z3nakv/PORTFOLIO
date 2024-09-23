@@ -33,20 +33,25 @@
     form {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: .5rem;
+        margin-top: 2rem;
 
         & input {
             width: 60%;
             border-radius: .5rem;
             border: none;
             outline: none;
-            padding-inline: .5rem;
+            padding: .5rem 1rem;
         }
 
         & button {
             background-color: rgb(38, 50, 80);
             border: none;
+            border-radius: .5rem;
             transition: transform .3s;
+            padding: .5rem 1rem;
+            cursor: pointer;
 
             &:hover {
                 transform: scale(1.1);

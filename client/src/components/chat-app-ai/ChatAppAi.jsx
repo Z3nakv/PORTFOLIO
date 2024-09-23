@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import useOutsideClick from "./useOutsideClick.jsx";
 import './ChatAppAi.css';
 
-const ChatAppAi = ({ reference }) => {
+const ChatAppAi = () => {
   const [chat, setChat] = useState([]);
   const [showChat, setShowChat] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
@@ -31,6 +31,22 @@ const ChatAppAi = ({ reference }) => {
     localStorage.setItem("history", JSON.stringify(chat));
   }, [chat]);
 
+  const addSaludoIfNeeded = () => {
+    const lastOpened = localStorage.getItem("lastOpened");
+    const currentTime = new Date().getTime();
+    
+    // Si no hay registro previo o han pasado más de 30 minutos (1800000 ms)
+    if (!lastOpened || currentTime - lastOpened > 1800000) {
+      setChat((prev) => [
+        ...prev,
+        { role: "model", parts: [{ text: "Hola, soy el asistente virtual de Adrian! ¿En qué puedo ayudarte hoy?" }] },
+      ]);
+    }
+    
+    // Actualizar el timestamp de la última vez que se abrió el chat
+    localStorage.setItem("lastOpened", currentTime);
+  };
+
   const result = async (userMessage) => {
     // Añadir el mensaje del usuario inmediatamente al chat
     setChat((prev) => [
@@ -41,7 +57,7 @@ const ChatAppAi = ({ reference }) => {
     try {
       // Obtener la respuesta del modelo
       const respuesta = await model.generateContent(userMessage);
-      const modelResponse = await respuesta.response.text();
+      const modelResponse = respuesta.response.text();
 
       // Añadir la respuesta del modelo al chat cuando esté disponible
       setChat((prev) => [
@@ -63,6 +79,10 @@ const ChatAppAi = ({ reference }) => {
   const handleClick = (e) => {
     if(!isDragging){
       setShowChat((prev) => !prev);
+      if (!showChat) {
+        // Si el chat se está abriendo, comprobar el saludo
+        addSaludoIfNeeded();
+      }
     }
     setIsDragging(false);
   };
