@@ -45,15 +45,15 @@ const ProjectModal = ({ selectedId, setSelectedId, link, techs }) => {
         }}
       >
         <motion.div
-          className="_motion-container"
+          className="__motion-container"
           layoutId={selectedId}
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="_video-container">video</div>
-          <div className="_details-container">
-            <div className="_details-subContainer">
-              <div className="_techsContainer">
-                <div className="_techsSubContainer">
+          <div className="__video-container">video</div>
+          <div className="__details-container">
+            <div className="__details-subContainer">
+              <div className="__techsContainer">
+                <div className="__techsSubContainer">
                  {
                     techs && techs.map(tech => (
                         technos[tech]
@@ -61,14 +61,14 @@ const ProjectModal = ({ selectedId, setSelectedId, link, techs }) => {
                  }
                 </div>
               </div>
-              <div className="_infoContainer">
+              <div className="__infoContainer">
                 <p>
                   {details[selectedId]}
                 </p>
               </div>
             </div>
             <FaExternalLinkAlt
-              className="link-icon"
+              className="__link-icon"
               onClick={() => window.open(`${link}`)}
             />
           </div>
