@@ -18,8 +18,8 @@
         align-items:center;
 
         & .__motion-container {
-            width:35rem; 
-            height:50rem; 
+            width:40rem; 
+            height:55rem; 
             padding:2rem; 
             background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
             color: var(--black-color);
@@ -29,16 +29,24 @@
 
             & .__video-container {
                 margin:auto;
-                height:60%;
                 display:grid;
                 place-content:center;
                 font-size:5rem;
+                border-radius: 3rem;
+                overflow: hidden;
+
+                & .__project-image {
+                    height: 30rem;
+                    width: 35rem;
+                    object-fit: fill;
+                }
             }
 
             & .__details-container {
                 display:flex;
                 align-items:center;
                 margin:1rem auto;
+                padding: 2rem;
 
                 & .__details-subContainer {
                     flex:1;

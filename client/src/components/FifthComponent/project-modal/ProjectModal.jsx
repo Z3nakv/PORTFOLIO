@@ -33,7 +33,14 @@ const details = {
     3:'Panel de administración dinámico desarrollado con React, utilizando Redux para el manejo eficiente del estado y Material UI para un diseño moderno y accesible. Implementa animaciones fluidas con Framer Motion, creando una experiencia visual atractiva. La interfaz es completamente responsive, permitiendo gestionar datos de forma intuitiva desde cualquier dispositivo.'
 }
 
+const image = {
+  1: '/FoodiFy.png',
+  2: '/chatApp.png',
+  3: '/admin-dashboard.png'
+}
+
 const ProjectModal = ({ selectedId, setSelectedId, link, techs }) => {
+    console.log(image[selectedId]);
     
   return (
     <>
@@ -49,7 +56,7 @@ const ProjectModal = ({ selectedId, setSelectedId, link, techs }) => {
           layoutId={selectedId}
           onClick={(e) => e.stopPropagation()}
         >
-          <div className="__video-container">video</div>
+          <div className="__video-container"><img className="__project-image" src={image[selectedId]} alt="" /></div>
           <div className="__details-container">
             <div className="__details-subContainer">
               <div className="__techsContainer">
