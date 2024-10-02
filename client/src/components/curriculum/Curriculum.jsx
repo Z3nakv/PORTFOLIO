@@ -16,7 +16,7 @@ const Curriculum = () => {
       whileHover={{ scale: 1.2, duration: 0.5 }}
       >
         <FaExternalLinkAlt className="__link-icon" />
-        <a href="/resume.pdf" download="resume.pdf">
+        <a href="/Resume-esp.pdf" download="resume.pdf">
           <TbFileCv className="__link-cv" />
         </a>
       </motion.div>
