@@ -3,7 +3,7 @@ import { IoChatbubbleEllipses } from "react-icons/io5";
 import { MdDashboard } from "react-icons/md";
 import { AnimatePresence, motion } from 'framer-motion'
 import { useState } from "react";
-import ProjectModal from "./project-modal/projectModal";
+import ProjectModal from "./project-modal/ProjectModal.jsx";
 import "./projectsComponent.css";
 
 const ProjectsComponent = () => {
