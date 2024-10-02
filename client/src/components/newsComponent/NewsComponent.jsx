@@ -1,32 +1,33 @@
-import "./SixthComponent.css";
 import useFetchNews from '../../Hooks/useFetchNews.js';
-import Loader from "../../loader/Loader";
+import Loader from "../../loader/Loader.jsx";
 import { motion } from 'framer-motion'
 import { FaExternalLinkAlt } from "react-icons/fa";
+import "./newsComponent.css";
 
-const SixthComponent = () => {
+const NewsComponent = () => {
     const { news } = useFetchNews();
   return (
     <motion.div 
-    className="sixth-container"
+    className="news-container"
     initial={{ opacity:0, y:20 }}
     animate={{ opacity:1, y:0 }}
     transition={{ duration:2, delay:1 }}
     >
       <motion.div
-      className="sub_container"
+      className="__sub-container"
       whileHover={{ scale: 1.2, duration: 0.5 }}
       onClick={() => window.open(`${news.source.url}`, "blank")}
       >
-        <FaExternalLinkAlt className="link-icon" />
+        <div className="__bg"></div>
+        <FaExternalLinkAlt className="__link-icon" />
         {
         !news
         ? <Loader />
         :
         (
           <>
-            <h2>{news.title}</h2>
-            <img src={news.image} alt="" />
+            <h2 className='__title'>{news.title}</h2>
+            <img className='__img' src={news.image} alt="" />
           </>
         )}
       </motion.div>
@@ -34,4 +35,4 @@ const SixthComponent = () => {
   );
 };
 
-export default SixthComponent;
+export default NewsComponent;

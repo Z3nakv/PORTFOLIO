@@ -1,0 +1,82 @@
+.first-container {
+    grid-column: span 6; 
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc21ncTgwMmtnajZ6bTJ3M2MwbTIxcXlzMmt0MHVhbXNkdDc1M3pibiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/U7huVmA3TKuqvznInJ/giphy.webp');
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    gap: 2rem;
+    color: white;
+    aspect-ratio: 1/0.5;
+    text-shadow: 
+      0 0 5px #ebc9c8, 
+      0 0 10px #ebc9c8, 
+      0 0 15px #ebc9c8, 
+      0 0 0px #ebc9c8;
+
+      & ._bg {
+        position: absolute;
+        inset: 0;
+        background-color: var(--container-1);
+        opacity: .7;
+      }
+
+      & ._img-container {
+        z-index: 100;
+        position: absolute;
+        bottom: 1rem;
+        left: 5rem;
+  
+        & img {
+          height: auto;
+          width: min(13rem,20vw);
+          object-fit: cover;
+        }
+      }
+
+      & ._title {
+        font-size: min(4rem,6vw);
+        font-weight: 800;
+        width: 100%;
+        grid-column: span 4;
+        text-wrap: wrap;
+        text-align: center;
+        z-index: 100;
+      }
+  
+      & ._paragraph {
+        font-size: min(4rem,4vw);
+        grid-column: 3/5;
+        margin-left: -40%;
+        z-index: 100;
+      }
+  }
+
+  @media (min-width: 480px) { 
+    .first-container {
+      & ._paragraph {
+        grid-column: 2/5;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (min-width: 768px) { 
+    .first-container {
+      grid-column: span 4;
+      padding: 4rem;
+
+      & .title-name {
+        grid-column: 1/5;
+      }
+
+      & ._paragraph {
+        grid-column: 2/5;
+      }
+    }
+  }
+
+  

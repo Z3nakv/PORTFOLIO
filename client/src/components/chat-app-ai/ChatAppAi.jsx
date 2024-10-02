@@ -109,8 +109,8 @@ const ChatAppAi = () => {
           onDragStart={handleDragStart}
           onDragEnd={handleDragEnd}
         >
-          <BsChatRightDotsFill className="chat-bot-icon" />
-          <img className="bot" src="/bot.png" alt="" />
+          <BsChatRightDotsFill className="__chat-bot-icon" />
+          <img className="__bot" src="/bot.png" alt="" />
         </motion.div>
       
       <AnimatePresence>
@@ -134,8 +134,8 @@ const ChatAppAi = () => {
                 }
               }}
             >
-              <div className="container">
-                <div className="chat-board">
+              <div className="__container">
+                <div className="__chat-board">
                   {chat &&
                     chat.map((message, index) => (
                       <div

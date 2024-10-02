@@ -1,0 +1,127 @@
+.fixed-background {
+    position:fixed;
+    inset:0;
+    background-color:#000;
+    opacity:.5;
+    z-index:50;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+    & .modal-container {
+        position:fixed; 
+        inset:0; 
+        z-index:60; 
+        display:flex; 
+        justify-content:center; 
+        align-items:center;
+
+        & ._motion-container {
+            width:70%; 
+            height:50rem; 
+            padding:2rem; 
+            background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+            color: var(--black-color);
+            z-index:100; 
+            opacity:1; 
+            border-radius:2rem;
+
+            & ._video-container {
+                margin:auto;
+                height:60%;
+                display:grid;
+                place-content:center;
+                font-size:5rem;
+            }
+
+            & ._details-container {
+                display:flex;
+                align-items:center;
+                margin:1rem auto;
+
+                & ._details-subContainer {
+                    flex:1;
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+
+                    & ._techsContainer {
+                        margin-bottom:1rem;
+                        font-size:3rem;
+                        width:70%;
+                        display:grid;
+                        grid-template-columns:1fr 1fr 1fr;
+                        place-items:center;
+
+                        & ._techsSubContainer {
+                            display:grid;
+                            grid-template-columns:repeat(8,1fr);
+                            gap:.5rem;
+                        }
+                    }
+
+                    & ._infoContainer {
+                        font-size:1.3rem;
+                        padding-right: 2.5rem;
+                        text-align: left;
+                    }
+                }
+
+                & .link-icon{
+                    font-size:3rem;
+                    cursor:pointer;
+                    transition: transform .3s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+    .react-icon {
+        font-size: 2.5rem; 
+        color: skyblue;
+    }
+    .js-icon {
+        font-size: 2.5rem; 
+        color: yellow;
+        background-color: #000;
+    }
+    .css-icon {
+        font-size: 2.5rem; 
+        color: blue;
+    }
+    .html-icon {
+        font-size: 2.5rem; 
+        color: orange;
+    }
+    .node-icon {
+        font-size: 2.5rem; 
+        color: green;
+    }
+    .mongo-icon {
+        font-size: 2.5rem; 
+        color: green;
+    }
+    .stripe-icon {
+        font-size: 2.5rem; 
+        color: purple;
+    }
+    .express-icon {
+        font-size: 2.5rem; 
+        color: green;
+    }
+    .firebase-icon {
+        font-size: 2.5rem; 
+        color: red;
+    }
+    .framer-icon {
+        font-size: 2.5rem; 
+        color: purple;
+    }
+    .redux-icon {
+        font-size: 2.5rem; 
+        color: purple;
+    }

@@ -1,4 +1,4 @@
-.fifth-container {
+.projects-container {
     grid-column: span 6;
     display: flex;
     flex-direction: column;
@@ -10,11 +10,11 @@
     padding: 2rem;
     aspect-ratio: 1/0.5;
 
-    & h2 {
+    & .__title {
       font-size: 3rem;
     }
     
-    & .projects-container {
+    & .__projects {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -22,53 +22,54 @@
       padding: 1rem;
       padding-top: 0;
 
-      & svg {
-        font-size: 8rem;
-        cursor: pointer;
-        transition: transform .2s;
-  
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-
-      & div {
+      & .__project { 
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
         flex: 1;
-      }
-  
-      & p {
-        font-size: 1.5rem;
-        font-weight: bold;
+
+          & svg {
+          font-size: 8rem;
+          cursor: pointer;
+          transition: transform .2s;
+    
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+
+          & .__title-project {
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
       }
     }
   }
 
   @media (min-width: 480px) { 
-      .fifth-container{
-        & h2 {
+      .projects-container{
+        & .__title {
           font-size: 4.5rem;
         }
       }
   }
 
   @media (min-width: 768px) { 
-    .fifth-container {
+    .projects-container {
       grid-column: span 4;
 
-      & h2 {
+      & .__title {
         font-size: 5rem;
       }
 
-      & .projects-container {
-  
-        & svg {
-          font-size: 10rem;
+      & .__projects {
+        & .__project {
+          & svg {
+            font-size: 10rem;
+          }
         }
-    }
+      }
   }
 }

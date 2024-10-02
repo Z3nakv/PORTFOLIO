@@ -12,12 +12,12 @@ const Curriculum = () => {
       transition={{ duration: 1.2, delay: 0.2 }}
     >
       <motion.div
-      className="sub_container"
+      className="__sub-container"
       whileHover={{ scale: 1.2, duration: 0.5 }}
       >
-        <FaExternalLinkAlt className="link-icon" />
+        <FaExternalLinkAlt className="__link-icon" />
         <a href="/resume.pdf" download="resume.pdf">
-          <TbFileCv className="link-cv" />
+          <TbFileCv className="__link-cv" />
         </a>
       </motion.div>
     </motion.div>

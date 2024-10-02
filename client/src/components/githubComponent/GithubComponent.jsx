@@ -1,10 +1,10 @@
-import "./ThirdComponent.css";
 import { VscGithub } from "react-icons/vsc";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import "./githubComponent.css";
 
-const ThirdComponent = () => {
+const GithubComponent = () => {
   const [gif, setGif] = useState("");
   const requesGif = async () => {
     const response = await fetch(
@@ -20,23 +20,23 @@ const ThirdComponent = () => {
 
   return (
     <motion.div
-      className="third-container"
+      className="github-container"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.2, delay: 0.2 }}
       onClick={() => window.open("https://github.com/Z3nakv", "blank")}
     >
       <motion.div
-        className="sub_container"
+        className="__sub-container"
         whileHover={{ scale: 1.2, duration: 0.5 }}
       >
-        <p>Check out my projects and practice work here!</p>
-        <FaExternalLinkAlt className="link-icon" />
+        <p className="__paragraph">Check out my projects and practice work here!</p>
+        <FaExternalLinkAlt className="__link-icon" />
         {gif && <img src={gif} alt="" />}
-        <VscGithub className="github-icon" />
+        <VscGithub className="__github-icon" />
       </motion.div>
     </motion.div>
   );
 };
 
-export default ThirdComponent;
+export default GithubComponent;

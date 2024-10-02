@@ -1,17 +1,16 @@
-import FirstComponent from './components/FirstComponent/FirstComponent.jsx';
-import SecondComponent from './components/SecondComponent/SecondComponent.jsx';
-import ThirdComponent from './components/ThirdComponent/ThirdComponent.jsx';
+import IntroductionComponent from './components/introductionComponent/IntroductionComponent.jsx';
+import WeatherComponent from './components/weatherComponent/WeatherComponent.jsx';
+import GithubComponent from './components/githubComponent/GithubComponent.jsx';
 import useLightDarkMode from './Hooks/useLightDarkMode.js';
-import FourthComponent from './components/FourthComponent/FourthComponent.jsx';
-import FifthComponent from './components/FifthComponent/FifthComponent.jsx';
-import SixthComponent from './components/SixthComponent/SixthComponent.jsx';
-import SeventhComponent from './components/SeventhComponent/SeventhComponent.jsx';
-import EighthComponent from './components/EighthComponent/EighthComponent.jsx';
-import NinthComponent from './components/NinthComponent/NinthComponent.jsx';
+import TimeComponent from './components/timeComponent/TimeComponent.jsx';
+import ProjectsComponent from './components/FifthComponent/ProjectsComponent.jsx';
+import NewsComponent from './components/newsComponent/NewsComponent.jsx';
+import ContactMeComponent from './components/contactMeComponent/ContactMeComponent.jsx';
+import SkillsComponent from './components/skillsComponent/SkillsComponent.jsx';
+import AboutMeComponent from './components/aboutMeComponent/AboutMeComponent.jsx';
 import LinkedinComponent from './components/linkedinComponent/LinkedinComponent.jsx';
 import Curriculum from './components/curriculum/Curriculum.jsx';
 import ChatAppAi from './components/chat-app-ai/ChatAppAi.jsx';
-import { useRef } from 'react';
 
 const App = () => {
 
@@ -22,27 +21,27 @@ const App = () => {
     <div className='main-container' data-theme={theme}>
       <div className='grid-container'>
 
-        <FirstComponent />
+        <IntroductionComponent />
 
-        <SecondComponent />
+        <WeatherComponent />
 
-        <ThirdComponent />
+        <GithubComponent />
 
-        <FourthComponent handleToggle={handleToggleTheme} theme={theme} />
+        <TimeComponent handleToggle={handleToggleTheme} theme={theme} />
 
-        <FifthComponent />
+        <ProjectsComponent />
 
-        <SixthComponent />
+        <NewsComponent />
         
-        <SeventhComponent />
+        <ContactMeComponent />
 
         <LinkedinComponent />
 
-        <EighthComponent />
+        <SkillsComponent />
 
         <Curriculum />
 
-        <NinthComponent />
+        <AboutMeComponent />
 
       </div>
       <ChatAppAi />

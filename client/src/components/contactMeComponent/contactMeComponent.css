@@ -1,23 +1,23 @@
-.seventh-container {
+.contactMe-container {
     grid-column: span 3; 
     color: var(--black-color);
     position: relative;
     overflow: hidden;
     aspect-ratio: 1/1;
 
-    .sub_container {
+    .__sub-container {
         height: 100%;
         width: 100%;
         display: grid;
         place-content: center;
         cursor: pointer;
-        background: url('../../assets/joker-optimize.gif');
+        background: url('https://i.pinimg.com/originals/0b/0e/d9/0b0ed96ddad0cdbd8e4aabfaf2ff1a10.gif');
         background-color: rgba(70, 75, 203, 0.5);
         background-repeat: no-repeat;
         background-size:100% 100%;
         background-blend-mode: overlay;
 
-        & .link-icon {
+        & .__link-icon {
             height: 2rem;
             position: absolute;
             top:1rem;
@@ -25,11 +25,7 @@
             color: var(--black-color);
         }
     
-        & h4 {
-            font-size: 3rem;
-        }
-    
-        & .mail-icon {
+        & .__mail-icon {
             font-size: 10rem;
         }
     
@@ -40,7 +36,7 @@
 }
 
 @media (min-width: 768px) { 
-    .seventh-container {
+    .contactMe-container {
         grid-column: 5 / span 2;
     }
 }

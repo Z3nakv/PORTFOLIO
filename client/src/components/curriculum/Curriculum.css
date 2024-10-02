@@ -6,17 +6,18 @@
     color: var(--black-color);
     background-color: rgb(58, 58, 210);
 
-    & .sub_container {
+    & .__sub-container {
         height: 100%;
         width: 100%;
         display: grid;
         place-content: center;
+        position: relative;
 
-        & .link-cv {
+        & .__link-cv {
             font-size: 10rem;
         }
     
-        & .link-icon {
+        & .__link-icon {
             height: 2rem;
             position: absolute;
             top: 1rem;

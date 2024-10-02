@@ -10,26 +10,18 @@
     color: var(--black-color);
     aspect-ratio: 1/0.5;
 
-    & h2 {
-      font-size: 3rem;
+    & ._title {
+      font-size: min(3.5rem,5.5vw);
     }
 
-    & p {
-      font-size: 1.25rem;
+    & ._paragraph {
+      font-size: min(2.2rem,2.8vw);
     }
 }
 
 @media (min-width: 480px) { 
     .ninth-container {
       grid-row: 7;
-
-      & h2{
-        font-size: 5rem;
-      }
-
-      & p {
-        font-size: 1.6rem;
-      }
     }
 }
 
@@ -38,13 +30,5 @@
     grid-column: 1 / span 4;
     grid-row: 5/6;
     padding: 2rem 2rem;
-
-    & h2 {
-      font-size: 5rem;
-    }
-
-    & p {
-      font-size: 1.6rem;
-    }
   }
 }

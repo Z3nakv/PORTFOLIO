@@ -1,4 +1,4 @@
-.third-container {
+.github-container {
     grid-column: span 6; 
     position: relative;
     height: 18rem;
@@ -6,12 +6,12 @@
     overflow:hidden;
     cursor: pointer;
 
-    & .sub_container{
+    & .__sub-container{
       height: 100%;
       width: 100%;
       background-color: #5260d0;
 
-      p {
+      & .__paragraph {
         font-size: 2.5rem;
         font-weight: bold;
         text-align: left;
@@ -23,7 +23,7 @@
         max-width: 70%;
       }
 
-      & .link-icon {
+      & .__link-icon {
         height: 2rem;
         position: absolute;
         top: 1rem;
@@ -42,7 +42,7 @@
         mix-blend-mode:overlay;
       }
   
-      & .github-icon {
+      & .__github-icon {
         font-size: 4rem;
         color: var(--black-color);
         z-index: 20;
@@ -54,23 +54,23 @@
   }
 
   @media (min-width: 480px) { 
-      .third-container{
+      .github-container {
         grid-column: span 3;
         grid-row: span 2;
         height: 100%;
         display: grid;
 
-        & .sub_container {
+        & .__sub-container {
           display: flex;
           justify-content: center;
           align-items: center;
 
-          & p {
+          & .__paragraph {
             font-size: 3rem;
             top: 5rem;
           }
 
-          & .github-icon {
+          & .__github-icon {
             right: 1rem;
           }
         }
@@ -78,13 +78,13 @@
   }
 
   @media (min-width: 768px) { 
-      .third-container {
+      .github-container {
         grid-column: span 2;
         grid-row:span 1;
 
-        & .sub_container {
+        & .__sub-container {
 
-          & p {
+          & .__paragraph {
             font-size: 3rem;
           }
         }

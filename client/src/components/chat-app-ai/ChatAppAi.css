@@ -16,7 +16,7 @@
     background-color: rgba(0, 0, 0, .5);
 }
 
-.container {
+.__container {
     border: 1px solid black;
     height: 40rem;
     max-height: 500px;
@@ -65,7 +65,7 @@
     }
 }
 
-.chat-board {
+.__chat-board {
     height: 80%;
     margin: 1rem;
     margin-bottom: .5rem;
@@ -126,8 +126,9 @@
     position: fixed;
     bottom: 1rem;
     right: 1rem;
+    z-index: 1000;
     
-    & .chat-bot-icon {
+    & .__chat-bot-icon {
         color: white;
         font-size: 3rem;
         position: absolute;
@@ -135,7 +136,7 @@
         left: -1rem;
     }
 
-    .bot {
+    .__bot {
         height: 9rem;
         animation: 3s ease-in-out infinite alternate ani-bot ;
         pointer-events: none;
