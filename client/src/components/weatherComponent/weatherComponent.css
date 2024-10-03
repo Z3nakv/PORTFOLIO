@@ -1,7 +1,7 @@
 .weather-container {
-    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: linear-gradient(135deg, #006dfec4, #5b548a);
     grid-column: span 3; 
-    grid-row: 3/4;
+    /* grid-row: 3/4; */
     color: var(--black-color);
     display: flex;
     justify-content: center;
@@ -42,7 +42,6 @@
 
   @media (min-width: 480px) { 
       .weather-container {
-        grid-row: 2/3;
 
         & .__img {
           height: 12rem;

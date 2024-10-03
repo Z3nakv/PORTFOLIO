@@ -12,8 +12,8 @@ const LinkedinComponent = () => {
       transition={{ duration: 1.2, delay: 0.2 }}
       onClick={() =>
         window.open(
-          "https://www.linkedin.com/in/adrian-muñoz-rivarola-43b388292",
-          "blank"
+          'https://www.linkedin.com/in/adrian-munoz-rivarola-43b388292',
+          'blank'
         )
       }
     >

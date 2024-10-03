@@ -1,5 +1,6 @@
 .skills-container {
     grid-column: span 3; 
+    grid-row: 2;
     background: url('../../assets//giphy.webp');
     background-color: rgba(0, 0, 0, .6);
     background-blend-mode: overlay;
@@ -29,16 +30,17 @@
 
   @media (min-width: 480px) { 
       .skills-container {
+        /* grid-row: 1; */
         & .react-icon {
           font-size: 6rem;
         }
       }
   }
 
-  @media (min-width: 768px) { 
+  @media (min-width: 768px) {
     .skills-container {
-      grid-column: span 2;
-      grid-row: 4;
+      grid-column: 5/span 2;
+      grid-row: 1;
       padding: 2rem;
       display: grid;
       grid-template-columns: repeat(3, 1fr);

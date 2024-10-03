@@ -9,7 +9,7 @@
     & .__sub-container{
       height: 100%;
       width: 100%;
-      background-color: #5260d0;
+      background-color: var(--github-container-3);
 
       & .__paragraph {
         font-size: 2.5rem;
@@ -21,6 +21,7 @@
         top: 2rem;
         left: 2rem;
         max-width: 70%;
+        transition: color .3s;
       }
 
       & .__link-icon {

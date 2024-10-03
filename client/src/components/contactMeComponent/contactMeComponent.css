@@ -38,5 +38,6 @@
 @media (min-width: 768px) { 
     .contactMe-container {
         grid-column: 5 / span 2;
+        grid-row: 4;
     }
 }

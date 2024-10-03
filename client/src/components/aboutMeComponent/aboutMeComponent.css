@@ -1,5 +1,6 @@
 .ninth-container {
     grid-column: span 6; 
+    grid-row: 7;
     background-color: var(--container-9);
     text-align: start;
     padding: 2rem;
@@ -28,7 +29,7 @@
 @media (min-width: 768px) { 
   .ninth-container {
     grid-column: 1 / span 4;
-    grid-row: 5/6;
+    grid-row: 4/5;
     padding: 2rem 2rem;
   }
 }

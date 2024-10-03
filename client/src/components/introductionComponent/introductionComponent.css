@@ -67,7 +67,10 @@
   @media (min-width: 768px) { 
     .first-container {
       grid-column: span 4;
-      padding: 4rem;
+
+      & ._img-container {
+        left: 2rem;
+      }
 
       & .title-name {
         grid-column: 1/5;

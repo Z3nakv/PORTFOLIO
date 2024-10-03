@@ -1,10 +1,10 @@
 
 :root {
   --white-color: white;
-  --black-color: rgb(140, 134, 134);
+  --black-color: rgb(167, 160, 160);
   --container-1: rgb(32, 28, 86);
   --container-2: rgb(27, 26, 85);
-  --container-3: rgb(27, 26, 85);
+  --github-container-3: #554fc38c;
   --container-4: rgb(27, 26, 85);
   --container-5: rgb(7, 15, 43);
   --container-6: rgb(27, 26, 85);
@@ -14,7 +14,7 @@
 }
 
 [data-theme = 'dark'] {
-  --white-color: black;
+  --white-color: rgb(13, 12, 12);
   --black-color: #ffffff;
 }
 
